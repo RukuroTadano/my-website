@@ -14,7 +14,7 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center justify-center bg-gray-100 p-8">
         <div className="rounded-xl bg-white p-10 shadow-xl sm:p-12 md:p-16">
           <h1 className="mb-4 text-4xl font-extrabold text-gray-800 sm:text-5xl md:text-6xl">
-            Welcome to Tadano rukuro's Website!
+            Welcome to Tadano rukuro&apos;s Website!
           </h1>
           <p className="mt-2 text-center text-lg text-gray-600 sm:text-xl md:text-2xl">
             in progress...
