@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -35,6 +36,15 @@ export default function Home() {
           <p className="mt-2 text-center text-lg text-gray-600 sm:text-xl md:text-2xl">
             in progress...
           </p>
+          <h1 className="mb-4 text-4xl font-extrabold text-gray-800 sm:text-5xl md:text-6xl">
+            ブログ記事一覧
+          </h1>
+          <Link
+            href="blog-page"
+            className="inline-block px-6 py-3 text-lg font-semibold text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 transition-colors duration-200"
+          >
+            ブログを見る
+          </Link>
         </div>
       </main>
     </>
