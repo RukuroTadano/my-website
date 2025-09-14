@@ -9,7 +9,7 @@ export default function Home() {
         <meta name="description" content="只野るくろのWebsiteです" />
 
         {/* faviconの設定 */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="../public/favicon.ico" />
 
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
