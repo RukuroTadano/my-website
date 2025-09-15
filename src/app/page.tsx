@@ -48,22 +48,39 @@ export default function Home() {
         {/* Section 2: 説明エリア */}
         {/* コンテンツの最大幅を設定し、中央寄せにすると見やすい */}
         <div className="w-full bg-[#D9B0B7] py-12 px-4 sm:px-6 md:px-8">
-          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
-            {/* 左のボックス */}
-            <div className="w-full md:w-1/3">
-              <div className="aspect-square w-full bg-[#4789A8] rounded-lg"></div>
-            </div>
-            {/* 右のテキスト */}
-            <div className="w-full md:w-2/3">
-              <p className="text-base sm:text-lg text-gray-700">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deserunt tempora suscipit ipsam possimus. Dolorum fugit iure
-                incidunt saepe libero alias velit eos a dicta porro ipsam,
-                nesciunt, deleniti ratione in.Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Deserunt tempsora suscipit ipsam
-                possimus. Dolorum fugit iure incidunt saepe libero alias velit
-                eos a dicta porro ipsam, nesciunt, deleniti ratione in.
-              </p>
+          <div className="max-w-4xl mx-auto flex flex-col items-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+              LINEスタンプ販売中！
+            </h2>
+            <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
+              {/* 左のボックス */}
+              <div className="w-full md:w-1/3">
+                <Image
+                  src="/lineSticker.png"
+                  alt="Line Sticker"
+                  width={400}
+                  height={400}
+                  className="aspect-square w-full rounded-lg"
+                />
+              </div>
+              {/* 右のテキスト */}
+              <div className="w-full md:w-2/3">
+                <p className="text-base sm:text-lg text-gray-700 mb-3">
+                  「もちもちぱっつんガールズ」というLINEスタンプをリリースしました！
+                  <br />
+                  もちっとっしていて個性的なぱっつん前髪がチャームポイントの女の子たちのちょっぴりシュールで、でもどこか愛らしいスタンプです。
+                  <br />
+                  「おはよう」から「おやすみ」まで、さまざまなシーンで活躍してくれるように、一つひとつ心を込めて作りました。
+                  <br />
+                  ぜひ日々のトークに加えて、もちもちぱっつんガールズとの楽しいやりとりを始めてみませんか？
+                </p>
+                <Link
+                  href="https://store.line.me/stickershop/product/14198397/ja?ref=lsh_stickerDetail"
+                  className="inline-block px-8 py-3 text-lg sm:text-xl font-bold text-white bg-[#a85964] rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
+                >
+                  もちもちぱっつんガールズを使ってみる！
+                </Link>
+              </div>
             </div>
           </div>
         </div>
