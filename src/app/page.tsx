@@ -52,7 +52,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
               LINEスタンプ販売中！
             </h2>
-            <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
+            <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8">
               {/* 左のボックス */}
               <div className="w-full md:w-1/3">
                 <Image
@@ -64,13 +64,9 @@ export default function Home() {
                 />
               </div>
               {/* 右のテキスト */}
-              <div className="w-full md:w-2/3">
-                <p className="text-base sm:text-lg text-gray-700 mb-3">
-                  「もちもちぱっつんガールズ」というLINEスタンプをリリースしました！
-                  <br />
-                  もちっとっしていて個性的なぱっつん前髪がチャームポイントの女の子たちのちょっぴりシュールで、でもどこか愛らしいスタンプです。
-                  <br />
-                  「おはよう」から「おやすみ」まで、さまざまなシーンで活躍してくれるように、一つひとつ心を込めて作りました。
+              <div className="w-full md:w-2/3 items-center flex flex-col">
+                <p className="text-base sm:text-lg text-gray-700 font-bold mb-12">
+                  もちっとっしていて個性的なぱっつん前髪がチャームポイントの女の子たちのスタンプです。
                   <br />
                   ぜひ日々のトークに加えて、もちもちぱっつんガールズとの楽しいやりとりを始めてみませんか？
                 </p>
@@ -78,7 +74,7 @@ export default function Home() {
                   href="https://store.line.me/stickershop/product/14198397/ja?ref=lsh_stickerDetail"
                   className="inline-block px-8 py-3 text-lg sm:text-xl font-bold text-white bg-[#a85964] rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
                 >
-                  もちもちぱっつんガールズを使ってみる！
+                  もちもちぱっつんガールズをチェック！
                 </Link>
               </div>
             </div>
