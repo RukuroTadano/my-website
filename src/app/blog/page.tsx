@@ -38,21 +38,20 @@ export default async function Blog() {
       <Head>
         <title>ブログ記事一覧</title>
       </Head>
-      <main className="flex min-h-screen flex-col items-center p-8 bg-gray-100">
+      <main className="flex min-h-screen flex-col items-center">
         <div className="text-center w-full max-w-2xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-800 my-8">
-            ブログ記事一覧
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white my-8">
+            BLOG
           </h1>
           {posts.length > 0 ? (
             <ul className="space-y-4">
               {posts.map((post) => (
-                <li
-                  key={post.slug}
-                  className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200"
-                >
-                  <Link href={`blog/${post.slug}`}>{post.title}</Link>
-                  <p className="text-gray-600 mt-2">{post.date}</p>
-                </li>
+                <Link key={post.slug} href={`blog/${post.slug}`}>
+                  <li className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+                    {post.title}
+                    <p className="text-gray-600 mt-2">{post.date}</p>
+                  </li>
+                </Link>
               ))}
             </ul>
           ) : (

@@ -6,7 +6,6 @@ import { remark } from "remark";
 import html from "remark-html";
 import { PostData } from "../../../../types/post";
 
-// 動的ルートのサーバーコンポーネント
 interface PostProps {
   params: {
     slug: string;
@@ -45,14 +44,15 @@ async function getPostData(slug: string): Promise<PostData> {
 }
 
 export default async function Post({ params }: PostProps) {
-  const postData = await getPostData(params.slug);
+  const { slug } = await params;
+  const postData = await getPostData(slug);
 
   return (
     <>
       <Head>
         <title>{postData.title}</title>
       </Head>
-      <main className="min-h-screen p-8 bg-gray-100 flex justify-center">
+      <main className="min-h-screen flex justify-center">
         <div className="prose lg:prose-xl max-w-none w-full md:w-3/4 lg:w-2/3 bg-white p-8 rounded-lg shadow-lg">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             {postData.title}

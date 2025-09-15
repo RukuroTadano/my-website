@@ -1,15 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { M_PLUS_Rounded_1c, Zen_Maru_Gothic } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const MPlusRounded = M_PLUS_Rounded_1c({
+  weight: ["400", "700"],
   subsets: ["latin"],
+  variable: "--font-m-plus-rounded",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const ZenMaru = Zen_Maru_Gothic({
+  weight: ["400", "700"],
   subsets: ["latin"],
+  variable: "--font-m-plus-rounded",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -24,11 +28,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${MPlusRounded.variable} ${ZenMaru.variable} antialiased`}
       >
         {children}
+        <footer className="text-center py-4">
+          <p>© 2025 Tadano Rukuro All rights reserved.</p>
+        </footer>
       </body>
     </html>
   );
