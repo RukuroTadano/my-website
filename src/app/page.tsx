@@ -88,17 +88,26 @@ export default function Home() {
             {/* md以上で順番を入れ替えるには md:flex-row-reverse を使う */}
             <div className="w-full flex flex-col md:flex-row-reverse items-center gap-8">
               <div className="w-full md:w-1/3">
-                <div className="aspect-square w-full bg-[#4789A8] rounded-lg"></div>
+                <Image
+                  src="/rukuroImage.jpeg"
+                  alt="Rukuro I Profile mage"
+                  width={400}
+                  height={400}
+                  className="aspect-square w-full rounded-lg"
+                />
               </div>
               <div className="w-full md:w-2/3">
                 <p className="text-base sm:text-lg">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Deserunt tempora suscipit ipsam possimus. Dolorum fugit iure
-                  incidunt saepe libero alias velit eos a dicta porro ipsam,
-                  nesciunt, deleniti ratione in.Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Deserunt tempsora suscipit ipsam
-                  possimus. Dolorum fugit iure incidunt saepe libero alias velit
-                  eos a dicta porro ipsam, nesciunt, deleniti ratione in.
+                  只野るくろ
+                  <br />
+                  福岡県生まれ、千葉在住。
+                  <br />
+                  大学卒業後、某IT企業にてソフトウェアエンジニアとして勤務。
+                  主にReactNativeを用いたアプリ開発を担当している。
+                  <br />
+                  趣味はイラスト制作とゲーム、音楽・映画鑑賞など。
+                  最近はIllustratorやPhotoshopを使ったデジタルイラスト制作にハマっている。
+                  <br />
                 </p>
               </div>
             </div>
