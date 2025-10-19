@@ -106,7 +106,7 @@ export default function Home() {
                   主にReactNativeを用いたアプリ開発を担当している。
                   <br />
                   趣味はイラスト制作とゲーム、音楽・映画鑑賞など。
-                  最近はIllustratorやPhotoshopを使ってみたりもしている。
+                  たまに着物を着る。
                   <br />
                 </p>
               </div>

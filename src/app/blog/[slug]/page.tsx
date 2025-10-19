@@ -4,7 +4,9 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import gfm from "remark-gfm";
 import { PostData } from "../../../../types/post";
+import { formatDate } from "../../../../utils/formatDate";
 
 interface PostProps {
   params: {
@@ -32,6 +34,7 @@ async function getPostData(slug: string): Promise<PostData> {
 
   // マークダウンをHTMLに変換
   const processedContent = await remark()
+    .use(gfm)
     .use(html)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
@@ -40,6 +43,7 @@ async function getPostData(slug: string): Promise<PostData> {
     slug,
     contentHtml,
     ...matterResult.data,
+    date: formatDate(matterResult.data.date),
   };
 }
 
@@ -58,7 +62,10 @@ export default async function Post({ params }: PostProps) {
             {postData.title}
           </h1>
           <p className="text-gray-500 mb-6">{postData.date}</p>
-          <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+          <div
+            className="markdown-body"
+            dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+          />
         </div>
       </main>
     </>

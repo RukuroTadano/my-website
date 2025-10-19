@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { Post } from "../../../types/post";
+import { formatDate } from "../../../utils/formatDate";
 
 async function getPosts(): Promise<Post[]> {
   const postsDirectory = path.join(process.cwd(), "/src/app/posts");
@@ -24,6 +25,7 @@ async function getPosts(): Promise<Post[]> {
     return {
       slug,
       ...matterResult.data,
+      date: formatDate(new Date(matterResult.data.date)),
     };
   });
 
