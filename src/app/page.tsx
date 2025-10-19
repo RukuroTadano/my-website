@@ -16,7 +16,7 @@ export default function Home() {
         <meta property="og:title" content="只野るくろのWebsite" />
         <meta
           property="og:description"
-          content="このウェブサイトは、私のポートフォリオ兼ブログ（の予定）です。"
+          content="このウェブサイトは、只野るくろのポートフォリオ兼ブログです。"
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tadano-rukuro.vercel.app" />
@@ -68,7 +68,7 @@ export default function Home() {
                 <p className="text-base sm:text-lg text-gray-700 font-bold mb-12">
                   もちっとっしていて個性的なぱっつん前髪がチャームポイントの女の子たちのスタンプです。
                   <br />
-                  ぜひ日々のトークに加えて、もちもちぱっつんガールズとの楽しいやりとりを始めてみませんか？
+                  使ってくれると私がとても喜びます。
                 </p>
                 <Link
                   href="https://store.line.me/stickershop/product/14198397/ja?ref=lsh_stickerDetail"
@@ -100,13 +100,13 @@ export default function Home() {
                 <p className="text-base sm:text-lg">
                   只野るくろ
                   <br />
-                  福岡県生まれ、千葉在住。
+                  福岡県生まれ。
                   <br />
                   大学卒業後、某IT企業にてソフトウェアエンジニアとして勤務。
                   主にReactNativeを用いたアプリ開発を担当している。
                   <br />
                   趣味はイラスト制作とゲーム、音楽・映画鑑賞など。
-                  最近はIllustratorやPhotoshopを使ったデジタルイラスト制作にハマっている。
+                  最近はIllustratorやPhotoshopを使ってみたりもしている。
                   <br />
                 </p>
               </div>
