@@ -47,8 +47,12 @@ export default async function Blog() {
           </h1>
           {posts.length > 0 ? (
             <ul className="space-y-4">
-              {posts.map((post) => (
-                <Link key={post.slug} href={`blog/${post.slug}`}>
+              {[...posts].reverse().map((post) => (
+                <Link
+                  key={post.slug}
+                  href={`blog/${post.slug}`}
+                  className="block"
+                >
                   <li className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
                     {post.title}
                     <p className="text-gray-600 mt-2">{post.date}</p>

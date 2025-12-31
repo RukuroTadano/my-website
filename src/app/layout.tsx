@@ -32,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${MPlusRounded.variable} ${ZenMaru.variable} antialiased`}
       >
-        {children}
+        <main className="mt-12">{children}</main>
         <footer className="text-center py-4">
           <p>© 2025 Tadano Rukuro All rights reserved.</p>
         </footer>
