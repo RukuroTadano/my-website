@@ -68,7 +68,8 @@ h6 {
 }
 
 .prose img {
-  width: auto;
+  display: block;
+  width: 100%;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
