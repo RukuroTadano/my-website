@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -57,7 +58,14 @@ export default async function Post({ params }: PostProps) {
         <title>{postData.title}</title>
       </Head>
       <main className="min-h-screen flex justify-center">
-        <div className="prose lg:prose-xl max-w-none w-full md:w-3/4 lg:w-2/3 bg-white p-8 rounded-lg shadow-lg">
+        <article className="prose lg:prose-xl max-w-none w-full md:w-3/4 lg:w-2/3 bg-white p-8 rounded-lg shadow-lg">
+          <Link
+            href="/"
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-6 transition-colors"
+          >
+            <span className="mr-2">＜</span>
+            <span>トップへ戻る</span>
+          </Link>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             {postData.title}
           </h1>
@@ -66,7 +74,7 @@ export default async function Post({ params }: PostProps) {
             className="markdown-body"
             dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
           />
-        </div>
+        </article>
       </main>
     </>
   );

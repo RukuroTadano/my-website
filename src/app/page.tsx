@@ -76,6 +76,12 @@ export default function Home() {
                 >
                   もちもちぱっつんガールズをチェック！
                 </Link>
+                <Link
+                  href="https://store.line.me/stickershop/product/32518751/ja"
+                  className="inline-block px-8 py-3 text-lg sm:text-xl mt-4 font-bold text-white bg-[#a85964] rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
+                >
+                  もちもちぱっつんガールズ2も出たよ
+                </Link>
               </div>
             </div>
           </div>
