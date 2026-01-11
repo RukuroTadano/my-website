@@ -34,7 +34,7 @@ export default function RootLayout({
       >
         <main className="mt-12">{children}</main>
         <footer className="text-center py-4">
-          <p>© 2025 Tadano Rukuro All rights reserved.</p>
+          <p>© 2026 Tadano Rukuro All rights reserved.</p>
         </footer>
       </body>
     </html>
