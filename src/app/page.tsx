@@ -92,25 +92,23 @@ export default function Home() {
           <div className="max-w-4xl mx-auto flex flex-col items-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">About Me</h2>
             {/* md以上で順番を入れ替えるには md:flex-row-reverse を使う */}
-            <div className="w-full flex flex-col md:flex-row-reverse items-center gap-8">
-              <div className="w-full md:w-1/3">
+            <div className="w-full flex flex-col md:flex-row items-start gap-8">
+              <div className="w-full md:w-1/3 flex justify-center">
                 <Image
                   src="/rukuroImage.jpeg"
                   alt="Rukuro I Profile mage"
                   width={400}
                   height={400}
-                  className="aspect-square w-full rounded-lg"
+                  className="aspect-square w-24 rounded-full"
                 />
               </div>
               <div className="w-full md:w-2/3">
-                <p className="text-base sm:text-lg">
+                <p className="text-base sm:text-lg max-md:text-center">
                   只野るくろ
                   <br />
                   福岡県生まれ。
-                  <br />
                   大学卒業後、某IT企業にてソフトウェアエンジニアとして勤務。
                   主にReactNativeを用いたアプリ開発を担当している。
-                  <br />
                   趣味はイラスト制作とゲーム、音楽・映画鑑賞など。
                   たまに着物を着る。
                   <br />
