@@ -20,6 +20,15 @@ export const metadata: Metadata = {
   title: "只野るくろのWebsite",
   description:
     "このウェブサイトは、只野るくろのポートフォリオ兼ブログ（の予定）です",
+  openGraph: {
+    title: "只野るくろのWebsite",
+    images: ["/topImage.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "只野るくろのWebsite",
+    images: ["/topImage.png"],
+  },
 };
 
 export default function RootLayout({
