@@ -46,14 +46,12 @@ export default function Home() {
         </div>
 
         {/* Section 2: 説明エリア */}
-        {/* コンテンツの最大幅を設定し、中央寄せにすると見やすい */}
         <div className="w-full bg-[#D9B0B7] py-12 px-4 sm:px-6 md:px-8">
           <div className="max-w-4xl mx-auto flex flex-col items-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">
               LINEスタンプ販売中！
             </h2>
             <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-8">
-              {/* 左のボックス */}
               <div className="w-full md:w-1/3">
                 <Image
                   src="/lineSticker.png"
@@ -63,7 +61,6 @@ export default function Home() {
                   className="aspect-square w-full rounded-lg"
                 />
               </div>
-              {/* 右のテキスト */}
               <div className="w-full md:w-2/3 items-center flex flex-col">
                 <p className="text-base sm:text-lg text-gray-700 font-bold mb-12">
                   もちっとっしていて個性的なぱっつん前髪がチャームポイントの女の子たちのスタンプです。
@@ -91,7 +88,6 @@ export default function Home() {
         <div className="w-full py-12 px-4 sm:px-6 md:px-8">
           <div className="max-w-4xl mx-auto flex flex-col items-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">About Me</h2>
-            {/* md以上で順番を入れ替えるには md:flex-row-reverse を使う */}
             <div className="w-full flex flex-col md:flex-row items-start gap-8">
               <div className="w-full md:w-1/3 flex justify-center">
                 <Image

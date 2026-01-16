@@ -11,7 +11,6 @@ async function getPosts(): Promise<Post[]> {
   const fileNames = fs.readdirSync(postsDirectory);
 
   const allPostsData = fileNames.map((fileName) => {
-    // 拡張子を除いたファイル名がslug（記事のURL）になります
     const slug = fileName.replace(/\.md$/, "");
 
     // マークダウンファイルを文字列として読み込む

@@ -33,7 +33,6 @@ async function getPostData(slug: string): Promise<PostData> {
   // メタデータとマークダウン本文をパース
   const matterResult = matter(fileContents);
 
-  // マークダウンをHTMLに変換
   const processedContent = await remark()
     .use(gfm)
     .use(html)
