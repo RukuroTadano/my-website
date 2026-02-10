@@ -43,6 +43,12 @@ export default function Home() {
           >
             BLOG
           </Link>
+          <Link
+            href="upload-test"
+            className="inline-block px-8 py-3 text-lg sm:text-xl font-bold text-white bg-[#a85964] rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
+          >
+            UPLOAD TEST
+          </Link>
         </div>
 
         {/* Section 2: 説明エリア */}
