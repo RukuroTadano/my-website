@@ -35,7 +35,7 @@ async function getPostData(slug: string): Promise<PostData> {
 
   const processedContent = await remark()
     .use(gfm)
-    .use(html)
+    .use(html, { sanitize: false })
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
 
