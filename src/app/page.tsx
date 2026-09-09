@@ -102,9 +102,7 @@ export default function Home() {
                 <p className="text-base sm:text-lg max-md:text-center">
                   只野るくろ
                   <br />
-                  福岡県生まれ。
-                  大学卒業後、某IT企業にてソフトウェアエンジニアとして勤務。
-                  主にReactNativeを用いたアプリ開発を担当している。
+                  福岡県生まれ。職業はソフトウェアエンジニアかもしれない。
                   趣味はイラスト制作とゲーム、音楽・映画鑑賞など。
                   たまに着物を着る。
                   <br />
