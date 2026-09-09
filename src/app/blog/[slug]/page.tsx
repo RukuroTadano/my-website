@@ -59,11 +59,11 @@ export default async function Post({ params }: PostProps) {
       <main className="min-h-screen flex justify-center">
         <article className="prose lg:prose-xl max-w-none w-full md:w-3/4 lg:w-2/3 bg-white p-8 rounded-lg shadow-lg">
           <Link
-            href="/"
+            href="/blog"
             className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-6 transition-colors"
           >
             <span className="mr-2">＜</span>
-            <span>トップへ戻る</span>
+            <span>ブログ一覧へ戻る</span>
           </Link>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             {postData.title}

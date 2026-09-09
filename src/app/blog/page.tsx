@@ -39,9 +39,16 @@ export default async function Blog() {
       <Head>
         <title>ブログ記事一覧</title>
       </Head>
-      <main className="flex min-h-screen flex-col items-center">
-        <div className="text-center w-full max-w-2xl">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white my-8">
+      <main className="flex min-h-screen flex-col items-center px-4 py-6 sm:px-6">
+        <div className="w-full max-w-2xl">
+          <Link
+            href="/"
+            className="inline-flex items-center self-start text-sm font-medium text-sky-700 hover:text-sky-900 transition-colors mb-4"
+          >
+            <span className="mr-2 text-base">＜</span>
+            <span>トップへ戻る</span>
+          </Link>
+          <h1 className="text-center text-4xl sm:text-5xl md:text-6xl font-extrabold text-white my-8">
             BLOG
           </h1>
           {posts.length > 0 ? (
@@ -52,7 +59,7 @@ export default async function Blog() {
                   href={`blog/${post.slug}`}
                   className="block"
                 >
-                  <li className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200">
+                  <li className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 text-center">
                     {post.title}
                     <p className="text-gray-600 mt-2">{post.date}</p>
                   </li>
